@@ -1,5 +1,58 @@
 @import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
 .App {
   padding: 10px 10px 0px 10px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#editor-container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: white;
+}
+
+#preview-container {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#editor {
+  position: absolute;
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  background: transparent;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+#backdrop {
+  position: absolute;
+  height: auto;
+  margin: 0;
+}
+
+#highlights {
+  font-family: "Roboto Mono", "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: transparent;
+}
+
+mark {
+  background-color: LightGrey;
+  color: transparent;
+}
+
+#preview {
+  padding: 10px;
+  color: white;
+}
+
+pre {
+  background-color: DarkGrey;
+  color: white;
 }
